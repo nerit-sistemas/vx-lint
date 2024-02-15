@@ -1,19 +1,7 @@
 module.exports = {
 	rules: {
-
 		'@typescript-eslint/naming-convention': [
 			'error',
-
-			// propriedade
-
-			/**
-			 * Propriedades PUBLIC com modificador OMITIDO:
-			 *
-			 * ?? :??
-			 * ?? :(string|number|function)
-			 * ?? :array
-			 * ?? :boolean
-			 */
 
 			{   // ?? :??
 				selector: 'property',
@@ -801,7 +789,6 @@ module.exports = {
 					regex: "^(is|are|should|must|can|have|has|did|dont|will|enable|require|force|IS|ENABLE|REQUIRE|FORCE|DONT)"
 				}
 			},
-
 		],
 
 		'@typescript-eslint/ban-types': ['error', {
@@ -841,314 +828,45 @@ module.exports = {
 				},
 			}
 		}],
-
-		//não permitir variáveis ​​não utilizadas
-		'@typescript-eslint/no-unused-vars': [
-			'error',
-			{
-				vars: 'all',
-				args: 'after-used',
-				ignoreRestSiblings: false
-			}
-		],
-
-		// TODO: Reabilitar essas regras & fazer elas funcinarem direito        
-		'@getify/proper-arrows/where': 'off',
-
-		// TODO: Artualizar valor no pacote com configuracoes padrao da empresa
-		//'@typescript-eslint/unbound-method': ['warn', { ignoreStatic: true }],
-		'@getify/proper-arrows/where': 'off',
-
-		//não permitir espaços mistos e tabulações para recuo
-		'no-mixed-spaces-and-tabs': 'off',
-
-		'unicorn/no-fn-reference-in-iterator': 'off',
-
-		//exigir ou não permitir ponto e vírgula em vez de ASI
-		'semi': ['error', 'never'],
-
-		//requerem declarações `const` para variáveis ​​que nunca são reatribuídas após serem declaradas
-		'prefer-const': 'error',
-
-		//não permitir importações de módulos duplicados
-		'no-duplicate-imports': 'error',
-
-
-		/**
-		// Regra desabilitada pois atrapalha.
-		// Organiza os imports em grupos para facilitar leitura.
-		'import-helpers/order-imports': [
-			'error',
-			{
-				'newlinesBetween': 'always',
-				'groups': [
-					'/^type/',
-					'module',
-					'/^@common/',
-					['parent', 'sibling', 'index']
-				],
-				'alphabetize': { 'order': 'asc', 'ignoreCase': true }
-			}
-		],
-		*/
-
-		//obriga o uso de aspas simples
-		'quotes': [
-			'error',
-			'single'
-		],
-
-		//obriga espaco depois da virgula.
-		'comma-spacing': ['error', { 'before': false, 'after': true }],
-
-		//Requer ou não permite um espaço antes de parênteses de função
-		'space-before-function-paren': ['error', {
-			'anonymous': 'always',
-			'named': 'always',
-			'asyncArrow': 'always'
-		}],
-
-		// Obrigado tres iguais
-		'eqeqeq': ['error', 'always'],
-
-		// Permite apenas console info 
-		'no-console': ['warn', { 'allow': ['info'] }],
-
-		// Nao permite usar variavel Any
-		'@typescript-eslint/no-explicit-any': 'error',
-
-		// Nao permite espacos seguidos.
-		'no-trailing-spaces': ['error', { 'ignoreComments': true }],
-
-		//Não permite returnantes else
-		'no-else-return': 'error',
-
-		//Não permite a sintaxe de espaço reservado literal de modelo em strings regulares.
-		'no-template-curly-in-string': 'error',
-
-		//impor um estilo específico para comentários de várias linhas
-		'multiline-comment-style': ['error', 'starred-block'],
-
-		//Impõe um recuo consistente
-		indent: [
-			'error',
-			'tab',
-			{
-				MemberExpression: 1,
-				ignoredNodes: [
-					'FunctionExpression > .params[decorators.length > 0]',
-					'FunctionExpression > .params > :matches(Decorator, :not(:first-child))',
-					'ClassBody.body > PropertyDefinition[decorators.length > 0] > .key',
-				],
-			},
-		],
-
-
-		/**
-		 * ERROS
-		 */
-		'@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
-		'@typescript-eslint/no-empty-function': ['error', { 'allow': ['protected-constructors', 'private-constructors'] }],
-		'@typescript-eslint/brace-style': ['error', '1tbs', { 'allowSingleLine': true }],
-		'@typescript-eslint/no-misused-new': 'error',
-		'@typescript-eslint/func-call-spacing': ['error', 'never'],
-		'@typescript-eslint/quotes': ['error', 'single'],
-		'@typescript-eslint/semi': ['error', 'never'],
-		// '@typescript-eslint/space-before-function-paren': ['error', { 'anonymous': 'never', 'named': 'never', 'asyncArrow': 'always' }],
-		'@typescript-eslint/no-useless-constructor': 'error',
-		'@typescript-eslint/prefer-for-of': 'error',
-		'@typescript-eslint/prefer-includes': 'error',
-		// '@typescript-eslint/indent': ['error', 4],
-		'@typescript-eslint/adjacent-overload-signatures': 'error',
-		'@typescript-eslint/await-thenable': 'error',
-		'@typescript-eslint/class-name-casing': 'error',
-		'@typescript-eslint/consistent-type-assertions': 'error',
-		'@typescript-eslint/no-empty-interface': ['error', { 'allowSingleExtends': true }],
-		'@typescript-eslint/no-for-in-array': 'error',
-		'@typescript-eslint/no-namespace': 'error',
-		'@typescript-eslint/no-this-alias': 'error',
-		'@typescript-eslint/no-unnecessary-type-assertion': 'error',
-		'@typescript-eslint/restrict-plus-operands': 'error',
-		'@typescript-eslint/no-array-constructor': 'error',
-		'@typescript-eslint/interface-name-prefix': ['error', { 'prefixWithI': 'always', 'allowUnderscorePrefix': false }],
-		'@typescript-eslint/prefer-optional-chain': 'error',
-		'@typescript-eslint/prefer-readonly': 'error',
-		'@typescript-eslint/prefer-string-starts-ends-with': 'error',
-		'@typescript-eslint/promise-function-async': 'error',
-		'@typescript-eslint/explicit-function-return-type': [
-			'error',
-			{
-				allowExpressions: true,
-				allowTypedFunctionExpressions: true
-			}
-		],
-		'@typescript-eslint/no-unused-vars': [
-			'error',
-			{
-				'vars': 'all',
-				'args': 'after-used',
-				'ignoreRestSiblings': false
-			}
-		],
-		'@typescript-eslint/ban-types': [
-			'error',
-			{
-				'types': {
-					'Object': 'Use {} instead',
-					'String': {
-						'message': 'Use string instead',
-						'fixWith': 'string'
-					},
-					'Boolean': {
-						'message': 'Use boolean instead',
-						'fixWith': 'boolean'
-					}
-				}
-			}
-		],
-		'@typescript-eslint/type-annotation-spacing': [
-			'error',
-			{
-				'before': false,
-				'after': true,
-				overrides: {
-					arrow: {
-						before: true, after: true
-					}
-				}
-			}
-		],
-		'@typescript-eslint/member-delimiter-style': [
-			'error',
-			{
-				singleline: {
-					delimiter: 'comma',
-					requireLast: false,
-				},
-				multiline: {
-					delimiter: 'comma',
-					requireLast: true,
-				},
-				overrides: {
-					interface: {
-						multiline: {
-							delimiter: 'none',
-							requireLast: false
-						}
-					}
-				}
-			}
-		],
-		'@typescript-eslint/member-ordering': [
-			'error',
-			{
-				'default': [
-					'signature',
-					'public-static-field',
-					'public-abstract-field',
-					'public-instance-field',
-					'protected-static-field',
-					'protected-abstract-field',
-					'protected-instance-field',
-					'private-static-field',
-					'private-abstract-field',
-					'private-instance-field',
-					'constructor',
-					'public-static-method',
-					'public-abstract-method',
-					'public-instance-method',
-					'protected-static-method',
-					'protected-abstract-method',
-					'protected-instance-method',
-					'private-static-method',
-					'private-abstract-method',
-					'private-instance-method',
-				]
-			}
-		],
-		'@typescript-eslint/naming-convention': [
-			'error',
-			{
-				selector: 'default',
-				format: ['camelCase']
-			},
-			{
-				selector: 'function',
-				format: ['camelCase', 'PascalCase'],
-				leadingUnderscore: 'allow'
-			},
-			{
-				selector: 'variable',
-				format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
-				leadingUnderscore: 'allow'
-			},
-			{
-				selector: 'parameter',
-				format: ['camelCase'],
-				leadingUnderscore: 'allow'
-			},
-			{
-				selector: 'class',
-				format: ['PascalCase'],
-				suffix: ['ResponseDTO', 'RequestDTO', 'Utils', 'Helper', 'Exception', 'Logger', 'Config', 'Validator', 'Constraint', 'CP', 'Actions', 'Requests', 'FormModel']
-			},
-			{
-				selector: 'interface',
-				format: ['PascalCase'],
-				prefix: ['I']
-			},
-			{
-				selector: 'enum',
-				format: ['PascalCase'],
-				suffix: ['Enum']
-			},
-			{
-				selector: 'enumMember',
-				format: ['UPPER_CASE']
-			},
-			{
-				selector: 'memberLike',
-				modifiers: ['private'],
-				format: ['camelCase'],
-				leadingUnderscore: 'require'
-			},
-			{
-				selector: 'memberLike',
-				modifiers: ['private', 'readonly'],
-				format: ['camelCase', 'UPPER_CASE'],
-				leadingUnderscore: 'require'
-			},
-			{
-				selector: 'memberLike',
-				modifiers: ['public', 'readonly'],
-				format: ['camelCase', 'UPPER_CASE'],
-				leadingUnderscore: 'forbid'
-			},
-			{
-				selector: 'typeParameter',
-				format: ['PascalCase'],
-				suffix: ['TP']
-			},
-			{
-				selector: 'typeAlias',
-				format: ['PascalCase'],
-				suffix: ['TP'],
-				leadingUnderscore: 'allow'
-			},
-			{
-				selector: 'variable',
-				types: ['boolean'],
-				format: ['PascalCase', 'UPPER_CASE'],
-				prefix: [
-					'is', 'are', 'should', 'must', 'have', 'has', 'was', 'can', 'did', 'will', 'show', 'enable', 'disable',
-					'IS_', 'ARE_', 'SHOULD_', 'MUST_', 'HAVE_', 'HAS_', 'WAS_', 'CAN_', 'DID_', 'WILL_', 'SHOW_', 'ENABLE_', 'DISABLE_'
-				],
-				leadingUnderscore: 'allow'
-			}
-		],
-		'@typescript-eslint/prefer-nullish-coalescing': 'warn',
-		'@typescript-eslint/no-misused-promises': 'warn',
-		'@typescript-eslint/unified-signatures': 'warn',
 	},
-}
 
+	// Disallow unused variables
+	'@typescript-eslint/no-unused-vars': [
+		'error',
+		{
+			vars: 'all',
+			args: 'after-used',
+			ignoreRestSiblings: false
+		}
+	],
+
+	// Require const declarations for variables that are never reassigned after declared
+	'prefer-const': 'error',
+
+	// Disallow duplicate module imports
+	'no-duplicate-imports': 'error',
+
+	// Enforce the use of single quotes
+	'quotes': [
+		'error',
+		'single'
+	],
+
+	// Require comma spacing after comma
+	'comma-spacing': ['error', { 'before': false, 'after': true }],
+
+	// Require strict equality
+	'eqeqeq': ['error', 'always'],
+
+	// Disallow the use of the 'any' type
+	'@typescript-eslint/no-explicit-any': 'error',
+
+	// Disallow multiple consecutive spaces
+	'no-trailing-spaces': ['error', { 'ignoreComments': true }],
+
+	// Disallow unnecessary else after return
+	'no-else-return': 'error',
+
+	// Import a specific style for multiline comments
+	'multiline-comment-style': ['error', 'starred-block'],
+};
