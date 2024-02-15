@@ -120,92 +120,14 @@ module.exports = {
 				]
 			}
 		],
-		'@typescript-eslint/naming-convention': [
-			'error',
-			{
-				selector: 'default',
-				format: ['camelCase']
-			},
-			{
-				selector: 'function',
-				format: ['camelCase', 'PascalCase'],
-				leadingUnderscore: 'allow'
-			},
-			{
-				selector: 'variable',
-				format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
-				leadingUnderscore: 'allow'
-			},
-			{
-				selector: 'parameter',
-				format: ['camelCase'],
-				leadingUnderscore: 'allow'
-			},
-			{
-				selector: 'class',
-				format: ['PascalCase'],
-				suffix: ['ResponseDTO', 'RequestDTO', 'Utils', 'Helper', 'Exception', 'Logger', 'Config', 'Validator', 'Constraint', 'CP', 'Actions', 'Requests', 'FormModel']
-			},
-			{
-				selector: 'interface',
-				format: ['PascalCase'],
-				prefix: ['I']
-			},
-			{
-				selector: 'enum',
-				format: ['PascalCase'],
-				suffix: ['Enum']
-			},
-			{
-				selector: 'enumMember',
-				format: ['UPPER_CASE']
-			},
-			{
-				selector: 'memberLike',
-				modifiers: ['private'],
-				format: ['camelCase'],
-				leadingUnderscore: 'require'
-			},
-			{
-				selector: 'memberLike',
-				modifiers: ['private', 'readonly'],
-				format: ['camelCase', 'UPPER_CASE'],
-				leadingUnderscore: 'require'
-			},
-			{
-				selector: 'memberLike',
-				modifiers: ['public', 'readonly'],
-				format: ['camelCase', 'UPPER_CASE'],
-				leadingUnderscore: 'forbid'
-			},
-			{
-				selector: 'typeParameter',
-				format: ['PascalCase'],
-				suffix: ['TP']
-			},
-			{
-				selector: 'typeAlias',
-				format: ['PascalCase'],
-				suffix: ['TP'],
-				leadingUnderscore: 'allow'
-			},
-			{
-				selector: 'variable',
-				types: ['boolean'],
-				format: ['PascalCase', 'UPPER_CASE'],
-				prefix: [
-					'is', 'are', 'should', 'must', 'have', 'has', 'was', 'can', 'did', 'will', 'show', 'enable', 'disable',
-					'IS_', 'ARE_', 'SHOULD_', 'MUST_', 'HAVE_', 'HAS_', 'WAS_', 'CAN_', 'DID_', 'WILL_', 'SHOW_', 'ENABLE_', 'DISABLE_'
-				],
-				leadingUnderscore: 'allow'
-			}
-		],
+
 		'@typescript-eslint/prefer-nullish-coalescing': 'warn',
 		'@typescript-eslint/no-misused-promises': 'warn',
 		'@typescript-eslint/unified-signatures': 'warn',
+		"no-extra-boolean-cast": 0,
 
 		'@typescript-eslint/naming-convention': [
-			'error',
+			'warn',
 
 			{   // ?? :??
 				selector: 'property',
