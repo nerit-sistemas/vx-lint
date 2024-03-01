@@ -105,33 +105,33 @@ module.exports = {
 				}
 			}
 		],
-		'@typescript-eslint/member-ordering': [
-			'error',
-			{
-				'default': [
-					'signature',
-					'public-static-field',
-					'public-abstract-field',
-					'public-instance-field',
-					'protected-static-field',
-					'protected-abstract-field',
-					'protected-instance-field',
-					'private-static-field',
-					'private-abstract-field',
-					'private-instance-field',
-					'constructor',
-					'public-static-method',
-					'public-abstract-method',
-					'public-instance-method',
-					'protected-static-method',
-					'protected-abstract-method',
-					'protected-instance-method',
-					'private-static-method',
-					'private-abstract-method',
-					'private-instance-method',
-				]
-			}
-		],
+		// '@typescript-eslint/member-ordering': [
+		// 	'error',
+		// 	{
+		// 		'default': [
+		// 			'signature',
+		// 			'public-static-field',
+		// 			'public-abstract-field',
+		// 			'public-instance-field',
+		// 			'protected-static-field',
+		// 			'protected-abstract-field',
+		// 			'protected-instance-field',
+		// 			'private-static-field',
+		// 			'private-abstract-field',
+		// 			'private-instance-field',
+		// 			'constructor',
+		// 			'public-static-method',
+		// 			'public-abstract-method',
+		// 			'public-instance-method',
+		// 			'protected-static-method',
+		// 			'protected-abstract-method',
+		// 			'protected-instance-method',
+		// 			'private-static-method',
+		// 			'private-abstract-method',
+		// 			'private-instance-method',
+		// 		]
+		// 	}
+		// ],
 		// '@typescript-eslint/naming-convention': [
 		// 	'warn',
 		// 	{
