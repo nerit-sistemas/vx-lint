@@ -3,6 +3,15 @@
  * Regras de lint NATIVAS (do eslint).
  */
 module.exports = {
+	root: true,
+	parser: '@typescript-eslint/parser',
+	plugins: [
+		'@typescript-eslint/eslint-plugin',
+	],
+	extends: [
+        "plugin:@typescript-eslint/recommended",  
+    ],
+
 	rules: {
 		'@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
 		'@typescript-eslint/no-empty-function': ['error', { 'allow': ['protected-constructors', 'private-constructors'] }],
