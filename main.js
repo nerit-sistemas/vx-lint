@@ -20,7 +20,7 @@ module.exports = {
 		'@typescript-eslint/func-call-spacing': ['error', 'never'],
 		'@typescript-eslint/quotes': ['error', 'single'],
 		'@typescript-eslint/semi': ['error', 'never'],
-		// '@typescript-eslint/space-before-function-paren': ['error', { 'anonymous': 'never', 'named': 'never', 'asyncArrow': 'always' }],
+		'@typescript-eslint/space-before-function-paren': ['error', { 'anonymous': 'never', 'named': 'never', 'asyncArrow': 'always' }],
 		'@typescript-eslint/no-useless-constructor': 'error',
 		'@typescript-eslint/prefer-for-of': 'error',
 		'@typescript-eslint/prefer-includes': 'error',
