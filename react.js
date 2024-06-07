@@ -18,4 +18,9 @@ module.exports = {
 		JSX: true,
 		React: true,
 	},
+	settings: {
+		react: {
+			version: 'detect',
+		},
+	},
 };
