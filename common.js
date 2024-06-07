@@ -91,5 +91,6 @@ module.exports = {
 		'unicorn/prefer-type-error': 'off',
 		'unicorn/prevent-abbreviations': ['error', { checkFilenames: false }],
 		'unicorn/template-indent': ['warn', { indent: '\t' }],
+		'unicorn/prevent-abbreviations': 'off',
 	},
 };
