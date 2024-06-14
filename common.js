@@ -93,5 +93,6 @@ module.exports = {
 		'unicorn/template-indent': ['warn', { indent: '\t' }],
 		'unicorn/prevent-abbreviations': 'off',
 		'unicorn/no-useless-switch-case': 'off',
+		'unicorn/no-array-reduce': 'off',
 	},
 };
