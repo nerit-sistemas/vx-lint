@@ -88,18 +88,18 @@ module.exports = {
 			'error',
 			{
 				singleline: {
-					delimiter: 'comma',
-					requireLast: false,
+					delimiter: 'semi',
+					requireLast: true,
 				},
 				multiline: {
-					delimiter: 'comma',
+					delimiter: 'semi',
 					requireLast: true,
 				},
 				overrides: {
 					interface: {
 						multiline: {
-							delimiter: 'none',
-							requireLast: false
+							delimiter: 'semi',
+							requireLast: true
 						}
 					}
 				}
