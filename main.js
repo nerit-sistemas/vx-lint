@@ -41,15 +41,7 @@ module.exports = {
 		'@typescript-eslint/prefer-readonly': 'error',
 		'@typescript-eslint/prefer-string-starts-ends-with': 'error',
 		'@typescript-eslint/promise-function-async': 'error',
-		'@typescript-eslint/interface-name-prefix': 'off',
-		'@typescript-eslint/naming-convention': [
-			'error',
-			{
-				selector: 'interface',
-				format: ['PascalCase'],
-				prefix: ['I'],
-			},
-		],
+		'@typescript-eslint/interface-name-prefix': ['error', { prefixWithI: 'always' }],
 		'@typescript-eslint/explicit-function-return-type': [
 			'error',
 			{
