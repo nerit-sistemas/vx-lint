@@ -105,6 +105,7 @@ module.exports = {
 				}
 			}
 		],
+		'@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true }],
 		// '@typescript-eslint/member-ordering': [
 		// 	'error',
 		// 	{
