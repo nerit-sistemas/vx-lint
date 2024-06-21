@@ -90,7 +90,7 @@ module.exports = {
 			'error',
 			{
 				singleline: {
-					delimiter: 'comma',
+					delimiter: 'semi',
 					requireLast: true,
 				},
 				multiline: {
