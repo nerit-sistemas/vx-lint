@@ -86,27 +86,7 @@ module.exports = {
 				},
 			},
 		],
-		'@typescript-eslint/member-delimiter-style': [
-			'error',
-			{
-				singleline: {
-					delimiter: 'semi',
-					requireLast: true,
-				},
-				multiline: {
-					delimiter: 'none',
-					requireLast: true,
-				},
-				overrides: {
-					interface: {
-						multiline: {
-							delimiter: 'none',
-							requireLast: true,
-						},
-					},
-				},
-			},
-		],
+		'@typescript-eslint/member-delimiter-style': ['off'],
 		'@typescript-eslint/no-use-before-define': 'off',
 		'@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true }],
 		// '@typescript-eslint/member-ordering': [
