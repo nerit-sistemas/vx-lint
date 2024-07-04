@@ -24,13 +24,7 @@ module.exports = {
 		},
 	],
 	rules: {
-		'@typescript-eslint/consistent-type-imports': [
-			'error',
-			{
-				prefer: 'type-imports',
-				fixStyle: 'inline-type-imports',
-			},
-		],
+		'@typescript-eslint/consistent-type-imports': 'off',
 		'@typescript-eslint/no-empty-function': 'off',
 		'@typescript-eslint/no-non-null-assertion': 'off',
 		'@typescript-eslint/no-shadow': 'error',
