@@ -54,6 +54,7 @@ module.exports = {
 		'no-param-reassign': 'off',
 		'no-restricted-syntax': 'off',
 		'no-shadow': 'off',
+		'import/namespace': 'off',
 		'no-underscore-dangle': 'off',
 		'no-unused-vars': 'off',
 		'no-use-before-define': 'off',
