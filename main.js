@@ -89,113 +89,8 @@ module.exports = {
 		'@typescript-eslint/member-delimiter-style': ['off'],
 		'@typescript-eslint/no-use-before-define': 'off',
 		'@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true }],
-		// '@typescript-eslint/member-ordering': [
-		// 	'error',
-		// 	{
-		// 		'default': [
-		// 			'signature',
-		// 			'public-static-field',
-		// 			'public-abstract-field',
-		// 			'public-instance-field',
-		// 			'protected-static-field',
-		// 			'protected-abstract-field',
-		// 			'protected-instance-field',
-		// 			'private-static-field',
-		// 			'private-abstract-field',
-		// 			'private-instance-field',
-		// 			'constructor',
-		// 			'public-static-method',
-		// 			'public-abstract-method',
-		// 			'public-instance-method',
-		// 			'protected-static-method',
-		// 			'protected-abstract-method',
-		// 			'protected-instance-method',
-		// 			'private-static-method',
-		// 			'private-abstract-method',
-		// 			'private-instance-method',
-		// 		]
-		// 	}
-		// ],
-		// '@typescript-eslint/naming-convention': [
-		// 	'warn',
-		// 	{
-		// 		selector: 'default',
-		// 		format: ['camelCase']
-		// 	},
-		// 	{
-		// 		selector: 'function',
-		// 		format: ['camelCase', 'PascalCase'],
-		// 		leadingUnderscore: 'allow'
-		// 	},
-		// 	{
-		// 		selector: 'variable',
-		// 		format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
-		// 		leadingUnderscore: 'allow'
-		// 	},
-		// 	{
-		// 		selector: 'parameter',
-		// 		format: ['camelCase'],
-		// 		leadingUnderscore: 'allow'
-		// 	},
-		// 	{
-		// 		selector: 'class',
-		// 		format: ['PascalCase'],
-		// 		suffix: ['ResponseDTO', 'RequestDTO', 'Utils', 'Helper', 'Exception', 'Logger', 'Config', 'Validator', 'Constraint', 'CP', 'Actions', 'Requests', 'FormModel']
-		// 	},
-		// 	{
-		// 		selector: 'interface',
-		// 		format: ['PascalCase'],
-		// 		prefix: ['I']
-		// 	},
-		// 	{
-		// 		selector: 'enum',
-		// 		format: ['PascalCase'],
-		// 		suffix: ['Enum']
-		// 	},
-		// 	{
-		// 		selector: 'enumMember',
-		// 		format: ['UPPER_CASE']
-		// 	},
-		// 	{
-		// 		selector: 'memberLike',
-		// 		modifiers: ['private'],
-		// 		format: ['camelCase'],
-		// 		leadingUnderscore: 'require'
-		// 	},
-		// 	{
-		// 		selector: 'memberLike',
-		// 		modifiers: ['private', 'readonly'],
-		// 		format: ['camelCase', 'UPPER_CASE'],
-		// 		leadingUnderscore: 'require'
-		// 	},
-		// 	{
-		// 		selector: 'memberLike',
-		// 		modifiers: ['public', 'readonly'],
-		// 		format: ['camelCase', 'UPPER_CASE'],
-		// 		leadingUnderscore: 'forbid'
-		// 	},
-		// 	{
-		// 		selector: 'typeParameter',
-		// 		format: ['PascalCase'],
-		// 		suffix: ['TP']
-		// 	},
-		// 	{
-		// 		selector: 'typeAlias',
-		// 		format: ['PascalCase'],
-		// 		suffix: ['TP'],
-		// 		leadingUnderscore: 'allow'
-		// 	},
-		// 	{
-		// 		selector: 'variable',
-		// 		types: ['boolean'],
-		// 		format: ['PascalCase', 'UPPER_CASE'],
-		// 		prefix: [
-		// 			'is', 'are', 'should', 'must', 'have', 'has', 'was', 'can', 'did', 'will', 'show', 'enable', 'disable',
-		// 			'IS_', 'ARE_', 'SHOULD_', 'MUST_', 'HAVE_', 'HAS_', 'WAS_', 'CAN_', 'DID_', 'WILL_', 'SHOW_', 'ENABLE_', 'DISABLE_'
-		// 		],
-		// 		leadingUnderscore: 'allow'
-		// 	}
-		// ],
+
+		'no-console': 'error',
 		'@typescript-eslint/prefer-nullish-coalescing': 'warn',
 		'@typescript-eslint/no-misused-promises': 'warn',
 		'@typescript-eslint/unified-signatures': 'warn',
@@ -243,5 +138,112 @@ module.exports = {
 				},
 			},
 		],
+		'@typescript-eslint/naming-convention': [
+			'warn',
+			{
+				selector: 'default',
+				format: ['camelCase']
+			},
+			{
+				selector: 'function',
+				format: ['camelCase', 'PascalCase'],
+				leadingUnderscore: 'allow'
+			},
+			{
+				selector: 'variable',
+				format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
+				leadingUnderscore: 'allow'
+			},
+			{
+				selector: 'parameter',
+				format: ['camelCase'],
+				leadingUnderscore: 'allow'
+			},
+			{
+				selector: 'class',
+				format: ['PascalCase'],
+				suffix: ['ResponseDTO', 'RequestDTO', 'Utils', 'Helper', 'Exception', 'Logger', 'Config', 'Validator', 'Constraint', 'CP', 'Actions', 'Requests', 'FormModel']
+			},
+			{
+				selector: 'interface',
+				format: ['PascalCase'],
+				prefix: ['I']
+			},
+			{
+				selector: 'enum',
+				format: ['PascalCase'],
+				suffix: ['Enum']
+			},
+			{
+				selector: 'enumMember',
+				format: ['UPPER_CASE']
+			},
+			{
+				selector: 'memberLike',
+				modifiers: ['private'],
+				format: ['camelCase'],
+				leadingUnderscore: 'require'
+			},
+			{
+				selector: 'memberLike',
+				modifiers: ['private', 'readonly'],
+				format: ['camelCase', 'UPPER_CASE'],
+				leadingUnderscore: 'require'
+			},
+			{
+				selector: 'memberLike',
+				modifiers: ['public', 'readonly'],
+				format: ['camelCase', 'UPPER_CASE'],
+				leadingUnderscore: 'forbid'
+			},
+			{
+				selector: 'typeParameter',
+				format: ['PascalCase'],
+				suffix: ['TP']
+			},
+			{
+				selector: 'typeAlias',
+				format: ['PascalCase'],
+				suffix: ['TP'],
+				leadingUnderscore: 'allow'
+			},
+			{
+				selector: 'variable',
+				types: ['boolean'],
+				format: ['PascalCase', 'UPPER_CASE'],
+				prefix: [
+					'is', 'are', 'should', 'must', 'have', 'has', 'was', 'can', 'did', 'will', 'show', 'enable', 'disable',
+					'IS_', 'ARE_', 'SHOULD_', 'MUST_', 'HAVE_', 'HAS_', 'WAS_', 'CAN_', 'DID_', 'WILL_', 'SHOW_', 'ENABLE_', 'DISABLE_'
+				],
+				leadingUnderscore: 'allow'
+			}
+		],
+		// '@typescript-eslint/member-ordering': [
+		// 	'error',
+		// 	{
+		// 		'default': [
+		// 			'signature',
+		// 			'public-static-field',
+		// 			'public-abstract-field',
+		// 			'public-instance-field',
+		// 			'protected-static-field',
+		// 			'protected-abstract-field',
+		// 			'protected-instance-field',
+		// 			'private-static-field',
+		// 			'private-abstract-field',
+		// 			'private-instance-field',
+		// 			'constructor',
+		// 			'public-static-method',
+		// 			'public-abstract-method',
+		// 			'public-instance-method',
+		// 			'protected-static-method',
+		// 			'protected-abstract-method',
+		// 			'protected-instance-method',
+		// 			'private-static-method',
+		// 			'private-abstract-method',
+		// 			'private-instance-method',
+		// 		]
+		// 	}
+		// ],
 	},
 };
