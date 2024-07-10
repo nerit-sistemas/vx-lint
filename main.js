@@ -182,13 +182,13 @@ module.exports = {
 				selector: 'memberLike',
 				modifiers: ['private'],
 				format: ['camelCase'],
-				leadingUnderscore: 'require'
+				leadingUnderscore: 'forbid'
 			},
 			{
 				selector: 'memberLike',
 				modifiers: ['private', 'readonly'],
 				format: ['camelCase', 'UPPER_CASE'],
-				leadingUnderscore: 'require'
+				leadingUnderscore: 'forbid'
 			},
 			{
 				selector: 'memberLike',
