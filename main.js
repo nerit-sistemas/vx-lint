@@ -9,6 +9,7 @@ module.exports = {
 	extends: ['plugin:@typescript-eslint/recommended'],
 
 	rules: {
+		"no-sparse-arrays": "error",
 		'@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
 		'@typescript-eslint/no-empty-function': [
 			'error',
