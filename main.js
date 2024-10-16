@@ -163,7 +163,7 @@ module.exports = {
 			{
 				selector: 'class',
 				format: ['PascalCase'],
-				suffix: ['ResponseDTO', 'RequestDTO', 'Utils', 'Helper', 'Exception', 'Logger', 'Config', 'Validator', 'Constraint', 'CP', 'Actions', 'Requests', 'FormModel', 'Controller', 'Manager']
+				suffix: ['ResponseDTO', 'RequestDTO', 'Utils', 'Helper', 'Exception', 'Logger', 'Config', 'Validator', 'Constraint', 'CP', 'Actions', 'Requests', 'FormModel', 'Controller', 'Manager', 'DAO']
 			},
 			{
 				selector: 'interface',
